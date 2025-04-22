@@ -34,6 +34,7 @@ A PyTorch-based deep learning project for automatic music genre classification u
 
 # 1. Clone the repository
 $ git clone [https://github.com/your-repo/music-genre-classifier.git](https://github.com/pjrahal/music-genre-classification)
+
 $ cd music-genre-classifier
 
 # 2. Run setup script (creates venv, installs deps, writes requirements.txt)
