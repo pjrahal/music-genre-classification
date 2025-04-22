@@ -5,17 +5,29 @@ A PyTorch-based deep learning project for automatic music genre classification u
 📁 Project Structure
 
 ├── settings.py               # Shared constants and logger
+
 ├── setup.py                  # Sets up virtualenv and installs packages
+
 ├── main.py                   # Entry point for training/testing
+
 ├── getData.py                # Dataset preparation and loading logic
+
 ├── train.py                  # Training loop
+
 ├── test.py                   # Evaluation loop
+
 ├── genreCNN.py               # CNN model definition
+
 ├── cachedGenreDataset.py     # Dataset class with feature caching
+
 ├── audioPreprocessing.py     # Audio preprocessing script
+
 ├── features/                 # Extracted mel-spectrograms and metadata
+
 ├── models/                   # Saved model checkpoints
+
 ├── fma_small/                # Raw audio files
+
 ├── fma_metadata/             # Track metadata
 
 ⚙️ Setup
