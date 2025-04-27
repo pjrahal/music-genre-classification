@@ -21,8 +21,8 @@ MODEL_SAVE_PATH = os.path.join(BASE_DIR, "../models/best_model_val.pth")
 FEATURES_USED = ["mel", "delta", "delta2"]
 
 # === Hyperparameters ===
-BATCH_SIZE = 32
-LEARNING_RATE = 0.001
+BATCH_SIZE = 24
+LEARNING_RATE = 0.01
 NUM_EPOCHS = 20
 PATIENCE = 5
 
