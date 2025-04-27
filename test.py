@@ -77,5 +77,14 @@ def testing(model, criterion, test_loader, device):
         if label.isdigit():
             logger.info(f"Class {label}: F1 = {metrics['f1-score']:.2f}, Precision = {metrics['precision']:.2f}, Recall = {metrics['recall']:.2f}")
 
-    logger.info("Confusion Matrix:")
+    # Add: Print overall metrics
+    logger.info("\nOverall Metrics:")
+    macro_precision = report['macro avg']['precision']
+    macro_recall = report['macro avg']['recall']
+    macro_f1 = report['macro avg']['f1-score']
+    logger.info(f"Macro Precision: {macro_precision:.2f}")
+    logger.info(f"Macro Recall:    {macro_recall:.2f}")
+    logger.info(f"Macro F1 Score:  {macro_f1:.2f}")
+
+    logger.info("\nConfusion Matrix:")
     logger.info(cm)
